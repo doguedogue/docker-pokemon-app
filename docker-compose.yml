@@ -6,8 +6,8 @@ services:
     image: mongo:6.0
     volumes:
       - poke-vol:/data/db
-    ports:
-      - 27017:27017
+    # ports:
+    #   - 27017:27017
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
